@@ -5,4 +5,12 @@
   </h1>
 </div>
 
-<b>The Question:</b> {{questionInfo?.question}} <br>
+<h2>Current Score: {{score}}</h2>
+
+<app-answer-component #child [questionInfo]="questionInfo" (somethingHappened)="checkAnswer()"></app-answer-component>
+
+<b>Answer</b> <input type='text' [(ngModel)]='answer'> <br>
+
+Feedback: {{feedback}}
+
+
