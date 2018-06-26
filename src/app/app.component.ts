@@ -8,7 +8,7 @@ import { DataService } from './data.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = 'Ayy lmao lets play jeapordy';
   score = 0;
   answer = 'answer here';
   feedback = '';
