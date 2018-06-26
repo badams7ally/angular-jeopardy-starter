@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-answer-component',
@@ -7,13 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class AnswerComponentComponent implements OnInit {
   @Input() questionInfo;
-  @Output() somethingHappened = new EventEmitter();
+  @Input() score;
   constructor() { }
 
   ngOnInit() {
   }
 
-  checkAnswerEvent() {
-     this.somethingHappened.emit();
-  }
 }
